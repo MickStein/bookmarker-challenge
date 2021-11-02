@@ -7,8 +7,12 @@ class Bookmark_page < Sinatra::Base
     "test"
   end
 
+  get '/' do 
+  redirect '/bookmarks'
+  end
+
   get '/bookmarks' do
-    @bookmarks = Bookmark.new.all
+    @all_bookmarks = Bookmark.new.all
     erb :bookmarks
   end
 
