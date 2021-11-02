@@ -1,3 +1,5 @@
+# User stories
+
 As a user I want to
 Show a list of bookmarks
 I want to see a list of bookmarks
@@ -29,3 +31,10 @@ I want to be able to filter bookmarks by tag
 As an Admin I want to
 manage user permissions
 Users should be restricted to manage only their own bookmarks
+
+# Database setup
+
+- Connect to psql
+- Create the database using the psql command CREATE DATABASE bookmark_manager;
+- Connect to the database using the pqsl command \c bookmark_manager;
+- Run the query we have saved in the file 01_create_bookmarks_table.sql
