@@ -4,18 +4,29 @@
       "/Users/michaelsteinacher/Projects/bookmarker-challenge/app.rb": {
         "lines": [
           1,
-          null,
           1,
           null,
           1,
-          1,
-          null,
           null,
           1,
           1,
           null,
           null,
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/michaelsteinacher/Projects/bookmarker-challenge/lib/bookmark.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
           null
         ]
       },
@@ -42,8 +53,23 @@
           null,
           null
         ]
+      },
+      "/Users/michaelsteinacher/Projects/bookmarker-challenge/spec/unit/bookmark_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1635782788
+    "timestamp": 1635863365
   }
 }
