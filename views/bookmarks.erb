@@ -1,1 +1,8 @@
-<p><%=@all_bookmarks%></p>
+<center>
+<h1>Bookmark Manager</h1>
+<p>
+<% @bookmarks.each do |bookmark| %>
+    <li><%= bookmark %></li>
+  <% end %>
+</p>
+</center>

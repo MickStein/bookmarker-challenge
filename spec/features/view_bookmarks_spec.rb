@@ -1,8 +1,15 @@
 require 'spec_helper'
 
-feature 'view bookmarks' do
-  scenario 'click on page to view bookmarks list' do
+feature 'views bookmarks' do
+  scenario 'user views list of bookmarks' do
+    visit '/'
+    expect(page).to have_content 'Bookmark Manager'
+  end
+
+  scenario 'user views list of bookmarks' do
     visit '/bookmarks'
-    expect(page).to have_content(['bookmark 1', "bookmark 2","bookmark 3", "bookmark 4"])
+    expect(page).to have_content 'http://makers.tech'
+    expect(page).to have_content 'http://www.destroyallsoftware.com'
+    expect(page).to have_content 'http://www.google.com'
   end
 end

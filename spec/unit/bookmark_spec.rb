@@ -1,11 +1,11 @@
 require 'bookmark'
 
-describe Bookmark do
-  context 'Returns a string of bookmarks' do
-    it 'creates a string of bookmarks and returns these' do
-      bookmark_list = Bookmark.new
+describe '.all' do
+  it 'returns a list of bookmarks' do
+    bookmarks = Bookmark.all
 
-      expect(bookmark_list.all).to eq(["bookmark 1", "bookmark 2","bookmark 3", "bookmark 4"])
-    end
+    expect(bookmarks).to include "http://makers.tech"
+    expect(bookmarks).to include "http://www.destroyallsoftware.com"
+    expect(bookmarks).to include "http://www.google.com"
   end
 end

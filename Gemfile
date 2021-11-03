@@ -10,3 +10,4 @@ gem 'capybara'
 gem 'rubocop', '1.2'
 gem 'simplecov', require: false
 gem 'simplecov-console', require: false
+gem 'pg'
