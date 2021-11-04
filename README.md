@@ -50,3 +50,7 @@ CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
 CREATE DATABASE "bookmark_manager_test";
 
 CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+
+WHEN RUNNING TESTS USE:
+$> ruby spec/setup_test_database.rb
+$> rspec
