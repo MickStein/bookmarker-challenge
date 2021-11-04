@@ -38,3 +38,15 @@ Users should be restricted to manage only their own bookmarks
 - Create the database using the psql command CREATE DATABASE bookmark_manager;
 - Connect to the database using the pqsl command \c bookmark_manager;
 - Run the query we have saved in the file 01_create_bookmarks_table.sql
+
+-- Dev environment
+# in migrations/01_create_bookmarks_table.sql
+CREATE DATABASE "bookmark_manager";
+
+CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+
+-- Test environment
+# in migrations/01_create_bookmarks_table.sql
+CREATE DATABASE "bookmark_manager_test";
+
+CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
